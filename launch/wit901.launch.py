@@ -32,7 +32,8 @@ def generate_launch_description():
             'baud': LaunchConfiguration('buadrate'),
             'frame_id': LaunchConfiguration('frame_id'),
             'gravity': LaunchConfiguration('gravity')
-        }]
+        }],
+        namespace='imu'
     )
 
     ld = LaunchDescription()
